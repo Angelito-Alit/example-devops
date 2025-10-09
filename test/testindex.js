@@ -1,9 +1,9 @@
-const crypto = require('crypto');
+import crypto from "crypto";
 
 function hash(mensaje) {
-  const hashObj = crypto.createHash('sha256');
-  hashObj.update(mensaje);
-  return hashObj.digest('hex');
+  const hash = crypto.createHash('sha256');
+  hash.update(mensaje);
+  return hash.digest('hex');
 }
 
 module.exports = hash;

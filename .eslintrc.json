@@ -1,28 +1,20 @@
 {
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "node": true,
-    "jest": true
-  },
-  "extends": [
-    "eslint:recommended"
-  ],
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "commonjs"
-  },
-  "globals": {
-    "Buffer": "readonly",
-    "__dirname": "readonly"
-  },
-  "rules": {
-    "indent": ["error", 2],
-    "linebreak-style": 0,
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"],
-    "no-unused-vars": ["error", { 
-      "argsIgnorePattern": "^(next|req|res|err)$" 
-    }]
-  }
+ "env": {
+   "browser": true,
+   "es2021": true,
+   "node": true
+ },
+ "extends": [
+   "eslint:recommended"
+ ],
+ "parserOptions": {
+   "ecmaVersion": "latest",
+   "sourceType": "module"
+ },
+ "rules": {
+   "indent": ["error", 2],
+   "linebreak-style": ["error", "unix"],
+   "quotes": ["error", "single"],
+   "semi": ["error", "always"]
+ }
 }
