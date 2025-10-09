@@ -159,7 +159,7 @@ router.post('/encrypt-rsa', (req, res) => {
 router.post('/decrypt-rsa', (req, res) => {
     const data = req.body
 
-    const decryptedData = crypto.publicDecrypt(
+    const decryptedData = crypto.privateDecrypt(
         {
             key: data.privateKey,
             padding: crypto.constants.RSA_PKCS1_OAEP_PADDING,
